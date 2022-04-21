@@ -1,0 +1,22 @@
+#Obteniendo Titulos
+
+$x('//article/h3/a/text()').map(x=>x.wholeText)
+
+#Obteniendo precios
+
+$x('//div[@class="product_price"]/p[@class="price_color"]/text()').map(x=>x.wholeText)
+
+#Obteniendo categoria
+
+$x('//div[@class="page-header action"]/h1/text()').map(x=>x.wholeText)
+
+Anime_List_WS
+
+
+OBTENER TITULOS TV NEW
+$x('//div[2]/div[3]/div[1]//a[@class="link-title"]/text()').map(x=>x.wholeText)
+
+
+OBTENER TITULOS TV CONTINUE
+$x('//div[2]/div[3]/div[3]//a[@class="link-title"]/text()').map(x=>x.wholeText)
+
