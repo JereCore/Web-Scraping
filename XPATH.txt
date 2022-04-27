@@ -13,10 +13,21 @@ $x('//div[@class="page-header action"]/h1/text()').map(x=>x.wholeText)
 Anime_List_WS
 
 
+#OBTENER TEMPORADA
+$x('//h1//a[@class="on"]/text()').map(x=>x.wholeText)
+
 OBTENER TITULOS TV NEW
 $x('//div[2]/div[3]/div[1]//a[@class="link-title"]/text()').map(x=>x.wholeText)
 
+OBTENER SCORE TV NEW
+$x('//div[2]/div[3]/div[1]//div[@title="Score"]/text()').map(x=>x.wholeText)
+
+OBTENER IMAGEN TV NEW
+$x('//div[2]/div[3]/div[1]//div[@class="image"]//a/img') y se uso .get
 
 OBTENER TITULOS TV CONTINUE
 $x('//div[2]/div[3]/div[3]//a[@class="link-title"]/text()').map(x=>x.wholeText)
 
+//*[@id="content"]/div[3]/div[1]/div[2]/div[4]/div[1]/div/div[1]/text()
+
+//*[@id="content"]/div[3]/div[1]/div[3]/div[2]/a[1]/img
